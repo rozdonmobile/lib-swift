@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LibSwift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LibSwift.'
+  s.summary          = 'Test CocoaPods library'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Test CocoaPods library to help me setup lib update automation on GitHub Actions.
                        DESC
 
-  s.homepage         = 'https://github.com/rozd/LibSwift'
+  s.homepage         = 'https://github.com/rozdonmobile/lib-swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rozd' => 'max.rozdobudko@gmail.com' }
-  s.source           = { :git => 'https://github.com/rozd/LibSwift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/rozdonmobile/lib-swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.swift_versions = [5.0]
+  s.ios.deployment_target = '11.0'
+  s.osx.deployment_target = '10.15'
 
   s.source_files = 'LibSwift/Classes/**/*'
   
