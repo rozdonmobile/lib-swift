@@ -1,0 +1,6 @@
+framework module LibSwift {
+  umbrella header "LibSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

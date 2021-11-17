@@ -1,0 +1,22 @@
+{
+  "name": "LibSwift",
+  "version": "0.1.0",
+  "summary": "A short description of LibSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rozd/LibSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rozd": "max.rozdobudko@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rozd/LibSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "LibSwift/Classes/**/*"
+}
