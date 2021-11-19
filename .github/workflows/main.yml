@@ -33,11 +33,16 @@ jobs:
           version: latest
           
       # Adds Spec Repo
-      - name: pod-repo-add
+      - name: pod repo add
         run: pod repo add rozdonmobile https://github.com/rozdonmobile/CocoaPodsSpecs.git
+
+      - name: pod repo push
+        uses: maxep/pod-repo-push-action@0.1.2
+        with:
+          repo-url: https://${{github.actor}}:${{github.token}}@github.com/rozdonmobile/cocoapods-specs.git 
         
-      # Push repo to Spec Repo
-      - name: pod-repo-push
-        run: pod repo push rozdonmobile LibSwift.podspec
+      # # Push repo to Spec Repo
+      # - name: pod-repo-push
+      #   run: pod repo push rozdonmobile LibSwift.podspec
       
       
