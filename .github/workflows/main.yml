@@ -34,7 +34,7 @@ jobs:
           
       # Adds Spec Repo
       - name: pod-repo-add
-        run: pod repo add rozdonmobile git@github.com:rozdonmobile/CocoaPodsSpecs.git
+        run: pod repo add rozdonmobile https://github.com/rozdonmobile/CocoaPodsSpecs.git
         
       # Push repo to Spec Repo
       - name: pod-repo-push
