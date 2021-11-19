@@ -39,7 +39,7 @@ jobs:
       - name: pod repo push
         uses: maxep/pod-repo-push-action@0.1.2
         with:
-          repo-url: https://${{github.actor}}:${{github.token}}@github.com/rozdonmobile/cocoapods-specs.git 
+          repo-url: https://${{github.actor}}:${{github.token}}@github.com/rozdonmobile/CocoaPodsSpecs.git 
         
       # # Push repo to Spec Repo
       # - name: pod-repo-push
